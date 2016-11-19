@@ -1,0 +1,586 @@
+/*头部开始*/
+header {
+	width: 100%;
+	height: 135px;
+	background: url("../images/wrapper_bg.png") repeat-x;
+}
+
+
+/*居中容器公共样式*/
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+/*顶部产品导航*/
+.family-nav {
+	width: 800px;
+	height: 30px;
+	display: inline-block;/*为了和右侧的登陆注册在同一行，所以用inline-block*/
+}
+
+.family-nav>li {
+	height: 30px;
+	float: left;
+}
+
+.family-nav>li>a {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #7a7a7a;
+	line-height: 29px;
+}
+.family-nav>li>a:hover {
+	color: #FC6B2D;
+}
+/*每个li之间的竖线图片*/
+.separator-family-nav {
+	width: 35px;
+	height: 25px;
+	/*display: block;*/
+	float: left;
+	margin-top: 2px;
+	background: url(../images/separator.png) -4px no-repeat;
+}
+
+
+/*登陆注册*/
+.login {
+	height: 30px;
+	float: right;
+	/*display: inline-block;*/
+}
+.login>li {
+	float: right;
+}
+.login>li>a {
+	font-family: "SimSun","宋体";
+	font-size: 12px;
+	color: #7a7a7a;
+	line-height: 30px;
+}
+.login>li>a:hover {
+	color: #FC6B2D;
+}
+.separator-login {
+	width: 35px;
+	height: 25px;
+	/*display: block;*/
+	float: right;
+	margin-top: 2px;
+	background: url(../images/separator.png) -4px no-repeat;
+}
+
+
+/*logo开始*/
+.logo {
+	display: inline-block;
+	width: 193px;
+	height: 40px;
+	margin: 15px 0 15px;
+	background: url(../images/logo.png) no-repeat;
+}
+
+
+/*搜索框开始*/
+.search {
+	width: 326px;
+	height: 32px;
+	margin-top: 20px;
+	float: right;
+	/*background: url(../images/search_box.png) no-repeat;*/
+}
+/*搜索输入区域*/
+.search-text {
+	width: 290px;
+	height: 32px;
+	line-height: 32px;
+	border: none;
+	outline: none;
+	padding-left: 3px;
+	text-indent: 6px;
+	float: left;
+	background: url(../images/search_box.png) no-repeat;
+}
+.search-text::-webkit-input-placeholder {
+	color: #7a7a7a;
+	font-family: /*"SimSun","宋体",*/Tahoma, Arial;
+	font-size: 12px;
+}
+/*输入区域获取焦点*/
+.search-text:focus {
+	background: url(../images/search_box_focus.png) no-repeat;
+}
+/*搜索按钮*/
+.search-button {
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	border: none;
+	outline: none;
+	float: left;
+	background: url(../images/search_box.png) -293px no-repeat;
+	cursor: pointer;
+}
+
+
+/*主导航栏开始*/
+.main-nav {
+	width: 1000px;
+	height: 35px;
+}
+.main-nav>li {
+	float: left;
+	margin-right: 30px;
+	position: relative;/*为new的绝对定位做铺垫*/
+}
+.main-nav>li:hover, .now-page {
+	background-color: #e94f0d;
+}
+
+.main-nav>li>a {
+	height:35px;
+	font-family:"Microsoft Yahei","微软雅黑";
+	font-size: 18px;
+	line-height: 35px;
+	color: #fff;
+	padding: 0 35px;
+}
+.no-margin-right {
+	margin-right: 0 !important;
+}
+
+.new {
+	width: 26px;
+	height: 14px;
+	position: absolute;
+	top: -16px;
+	right: 35px;
+	background: url(../images/new.png);
+}
+
+
+/*banner开始*/
+/*banner居中容器私有样式*/
+.banner-wrapper {
+	height: 400px;
+	position: relative;/*为文字的绝对定位做铺垫*/
+}
+/*banner图片*/
+.banner-img {
+	position: absolute;
+	left: -450px;
+	top: 1px;
+}
+/*更新日期*/
+.updata-time {
+	width:164px;
+	line-height: 18px;
+	position: absolute;
+	right: 260px;
+	bottom: 133px;
+	font-family: "微软雅黑",Arial;
+	font-size: 15px;
+	color: #6a6a6a;
+}
+/*新版特性*/
+.feature {
+	line-height: 20px;
+	position: absolute;
+	right: 189px;
+	bottom: 133px;
+	text-decoration: underline;
+	font-family: "微软雅黑",Arial;
+	font-size: 15px;
+	color: #6a6a6a;
+}
+/*支持*/
+.support {
+	line-height: 20px;
+	position: absolute;
+	right: 188px;
+	bottom: 106px;
+	font-family: "微软雅黑",Arial;
+	font-size: 15px;
+	color: #6a6a6a;
+}
+/*下载按钮*/
+.download-now {
+	width: 241px;
+	height: 60px;
+	background: url(../images/btn_for_down_8.1.0.png) no-repeat;
+	position: absolute;
+	right: 182px;
+	bottom: 35px;	
+}
+.download-now:hover {
+	background: url(../images/btn_for_down_8.1.0.png) 0 -60px no-repeat;/*背景图片定位*/
+}
+/*二维码*/
+.qr-code {
+	position: absolute;
+	right: 1px;
+	bottom: 60px;
+}
+/*手机版下载按钮*/
+.mobole-download {
+	width: 90px;
+	height: 22px;
+	background: url(../images/btn_for_mobile_8.1.0.png) no-repeat;
+	position: absolute;
+	right: 1px;
+	bottom: 35px;
+}
+.mobole-download:hover {
+	background: url(../images/btn_for_mobile_8.1.0.png) 0 -22px no-repeat;
+}
+
+/*container居中容器*/
+.container-wrapper {
+	margin-top: 35px;
+	height: 900px;
+	position: relative;
+}
+
+/*精彩皮肤模块*/
+.skin {
+	width: 734px;
+}
+/*6个皮肤大容器*/
+.little-skin {
+	width: 734px;
+	height: 500px;
+	margin-top: -2px;
+}
+/*小模块*/
+.little-skin>li {
+	width: 333px;
+	height: 157px;
+	float: left;
+	margin: 0 34px 13px 0;
+	position: relative;
+	background: url(../images/skin_border.png);
+}
+/*皮肤图片公共样式*/
+.images {
+	display: block;
+	width: 333px;
+	height: 124px;
+}
+
+/*作者公共样式*/
+.author {
+	line-height: 27px;
+	font-family: Tahoma,Arial;
+	font-size: 12px;
+	color: #696969;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.author:hover {
+	color: #ff8049;
+}
+/*下载按钮*/
+.little-download {
+	width: 72px;
+	height:25px;
+	position: absolute;
+	right: 1px;
+	bottom: 2px;
+}
+.little-download:hover {
+	background: url(../images/skin_download_hover.png);
+}
+
+/*扩展功能模块*/
+.extended {
+	width: 734px;
+}
+/*大容器*/
+.extended-list {
+	width: 100%;
+	height: 130px;
+	margin-top: 12px;
+}
+/*小模块*/
+.extended-list>li {
+	width: 90px;
+	height: 130px;
+	margin-right: 32px;
+	float: left;
+}
+/*功能公共样式*/
+.little-extended {
+	display: block;
+	width: 90px;
+	height: 90px;
+}
+
+/*功能名称公共样式*/
+.extended-name {
+	display: block;
+	width: 76px;
+	height: 23px;
+	margin: 10px 7px 0 7px;
+}
+/*功能1按钮*/
+.en1 {
+	background: url(../images/down_ex_func.png) 0 0 no-repeat;
+}
+.en1:hover {
+	background: url(../images/down_ex_func.png) 0 -23px no-repeat;
+}
+/*功能2按钮*/
+.en2 {
+	background: url(../images/down_ex_func.png) -76px 0 no-repeat;
+}
+.en2:hover {
+	background: url(../images/down_ex_func.png) -76px -23px no-repeat;
+}
+/*功能3按钮*/
+.en3 {
+	background: url(../images/down_ex_func.png) -152px 0 no-repeat;
+}
+.en3:hover {
+	background: url(../images/down_ex_func.png) -152px -23px no-repeat;
+}
+/*功能4按钮*/
+.en4 {
+	background: url(../images/down_ex_func.png) -228px 0 no-repeat;
+}
+.en4:hover {
+	background: url(../images/down_ex_func.png) -228px -23px no-repeat;
+}
+/*功能5按钮*/
+.en5 {
+	background: url(../images/down_ex_func.png) -304px 0 no-repeat;
+}
+.en5:hover {
+	background: url(../images/down_ex_func.png) -304px -23px no-repeat;
+}
+/*功能6按钮*/
+.en6 {
+	background: url(../images/down_ex_func.png) -380px 0 no-repeat;
+}
+.en6:hover {
+	background: url(../images/down_ex_func.png) -380px -23px no-repeat;
+}
+
+/*词库推荐*/
+.thesaurus {
+	width: 734px;
+	margin-top: 13px;
+}
+.thesaurus-list {
+	width: 734px;
+	height: 130px;
+	margin-top: 14px;
+}
+.thesaurus-list>li {
+	width: 90px;
+	height: 130px;
+	margin-right: 32px;
+	float: left;
+}
+.little-thesaurus {
+	width: 90px;
+	height: 90px;
+	display: block;
+}
+.thesaurus-name {
+	display: block;
+	line-height: 14px;
+	font-family: Tahoma, Arial;
+	font-size: 12px;
+	color: #818181;
+	margin: 10px 21px 0 21px;
+}
+.thesaurus-name:hover {
+	color: #ff8049;
+}
+
+/*右边栏*/
+.right-sidebar {
+	position: absolute;/*整个右侧都用绝对定位做的*/
+	right: 0;
+	top: 0;
+	margin-top: 15px;
+}
+
+.ad-plan {
+	display: block;
+	width: 266px;
+	height: 288px;
+	background: url(../images/index_siderbar_chuangye.jpg) no-repeat;
+}
+
+.new-active {
+	width: 266px;
+	height: 161px;
+	margin-top: 10px;
+}
+.active-list>li {
+	width: 251px;
+	height: 28px;
+	float: left;
+	background: url(../images/activity_bg.png) no-repeat;
+	padding: 5px 0 0 15px;
+}
+.active-list>li>a {
+	line-height: 12px;
+	font-family: Tahoma, Arial;
+	font-size: 12px;
+	color: #666;
+}
+.red {
+	color: red !important;
+}
+.active-list>li>a:hover {
+	color: #ff8049 !important;
+}
+
+.follow-us {
+	width: 266px;
+	height: 174px;
+	margin-top: 20px;
+	background: url(../images/focus_ewn.png) no-repeat;
+	position: relative;
+}
+.weibo {
+	display: block;
+	width: 106px;
+	height: 24px;
+	position: absolute;
+	right: 13px;
+	top: 62px;
+}
+.weixin {
+	display: block;
+	width: 106px;
+	height: 24px;
+	 	
+	right: 13px;
+	top: 103px;
+}
+.downlist {
+	width: 266px;
+	height: 182px;
+	margin-top: 16px;
+	background: url(../images/download_list.2.5.2.jpg) no-repeat;
+	position: absolute;
+	top: 174px;
+}
+.mobile-input {
+	display: block;
+	width: 73px;
+	height: 26px;
+	position: absolute;
+	right: 14px;
+	top: 18px;
+}
+.mobile-input:hover {
+	background: url(../images/download_list_hover.png) no-repeat;
+}
+.bowser {
+	display: block;
+	width: 73px;
+	height: 26px;
+	position: absolute;
+	right: 14px;
+	top: 78px;
+}
+.bowser:hover {
+	background: url(../images/download_list_hover.png) no-repeat;
+}
+.wallpaper {
+	display: block;
+	width: 73px;
+	height: 26px;
+	position: absolute;
+	right: 14px;
+	top: 138px;
+}
+.wallpaper:hover {
+	background: url(../images/download_list_hover.png) no-repeat;
+}
+
+/*页脚开始*/
+footer {
+	width: 100%;
+	height: 200px;
+	margin-top: 45px;
+	background: #f5f5f5;
+}
+
+
+.conect1 {
+	width: 510px;
+	height: 23px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-left: 25px;
+	background: url(../images/skin_icon.png) 0 45px no-repeat;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 23px;
+	color: #64696f;
+}
+.conect1>a {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #64696f;
+}
+
+.conect2 {
+	width: 569px;
+	height: 23px;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-left: 25px;
+	background: url(../images/skin_icon.png) 0 15px no-repeat;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	line-height: 23px;
+	color: #64696f;
+}
+.conect2>a {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	color: #64696f;
+}
+
+.footer-bar {
+	height: 48px;
+	margin-top: 20px;
+	text-align: center;
+}
+.footer-bar>a, .footer-bar>span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	line-height: 24px;
+}
+.footer-bar>a:hover {
+	text-decoration: underline;
+}
+
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	line-height: 24px;
+}
+.copyright>a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+	line-height: 24px;
+}
+.copyright>a:hover {
+	text-decoration: underline;
+}
+
+/*其实可以把字体字号、颜色等在这个项目中出现频率高的单独出来放在reset.css中，减少代码冗余*/
